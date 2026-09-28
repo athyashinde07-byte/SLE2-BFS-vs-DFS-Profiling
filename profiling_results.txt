@@ -1,0 +1,18 @@
+SLE-2: BFS vs DFS Profiling
+Grid size: 40 x 40
+Start node: 0
+Goal node: 1599
+Timing: 5 batches x 100 repetitions
+
+BFS
+Average time: 0.873661 ms/run
+Standard deviation: 0.210214 ms/run
+Nodes expanded: 1600
+
+DFS
+Average time: 0.047233 ms/run
+Standard deviation: 0.008218 ms/run
+Nodes expanded: 79
+
+Interpretation:
+For this fixed open-grid experiment, DFS expanded fewer nodes and had a lower measured average runtime than BFS. These results depend on the graph, traversal order, Python implementation and execution environment.
